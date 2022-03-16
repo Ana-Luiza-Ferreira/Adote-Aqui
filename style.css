@@ -1,0 +1,282 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font-family: 'Poppins', sans-serif;
+    }
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #c176ff;
+    }
+
+.header-container {
+  background-color: #9529ee;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    }
+
+.navbar-container {
+  width: 1000px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+    }
+
+.logo {
+  font-family: 'Fredoka', sans-serif;
+  color: rgb(59, 10, 92);
+    }
+
+.navbar-list {
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+    }
+
+.navbar-list > li {
+  list-style: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #e7e7e7;
+    }
+
+.site-container {
+  max-width: 1000px;
+  background-color: #eff0ef;
+  height: fit-content;
+  margin: auto;
+  margin-top: 0.8px;
+  display: flex;
+    }
+
+.site-content {
+    height: 100%;
+  width: 100%;
+  background-color: #c176ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    }
+
+.disponible-title {
+  margin-top: 0.8rem;
+  margin-bottom: 00.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 0rem 0.1rem 0.06rem #fbdeff;
+    }
+
+.posts-section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+    }
+
+.all-posts {  
+  margin: 0.4rem 2px 0.4rem 2px;
+  width: 25%;
+  height: 100%;
+  min-height: fit-content;
+  border-radius: 15px;
+  background-color: azure;
+    }
+
+.post-container {
+  display: inline-flex;
+  height: 60%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+    }
+
+.pet-img {
+  margin-top: 0.1rem;
+  width: 90%;
+  height: 50%;
+  background-color: rgb(217, 193, 248);
+  border-radius: 4px;
+    }
+
+.pet-name {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+.pet-size {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
+    }
+
+.pet-description {
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+  text-align: center;
+  height: 3rem;
+    }
+
+.adopt-btn {
+  margin-top: 0.8rem;  
+  border-radius: 6px;
+  width: 150px;
+  height: 30px;
+  color: #000000;
+  border: 1px solid #c176ff;
+    }
+
+.footer-container {
+  display: flex; 
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #c176ff;
+  margin-top: 1.2rem;
+    }
+
+.center-footer-container {
+  width: 100%;
+  max-width: 1000px;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #c176ff(110, 47, 47);
+    }
+
+.footer-lists-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+    }
+
+.footer-title {
+  margin-bottom: 20px;
+  color: aliceblue;
+    }
+
+.footer-list {
+  width: 100%;  
+  height: 100%;
+  color: aliceblue;
+  text-decoration: none;
+  list-style: none;
+    }
+
+.footer-list-item {
+  margin-top: 0.2rem;
+    }
+
+@media (max-width: 1440px) {
+    .footer-lists-container {
+      height: 80%;
+        }
+    }
+  
+  @media (max-width: 768px) {
+    .logo {
+      margin-left: 1.6rem;
+        }
+
+    .navbar-list {
+      margin-right: 1.6rem;
+        }
+    
+    .site-container {
+      margin: 0 auto;
+      max-width: 730px;
+      width: 95%;
+        }
+
+    .all-posts {
+      height: 310px;
+        }
+
+    .pet-description {
+      margin: 0.4rem;
+      margin-bottom: 0px;
+        }
+
+    .center-footer-container {
+      justify-content: center;
+      gap: 10px;
+        }
+
+    .footer-lists-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 20%;
+      height: 80%;
+        }
+
+    .footer-list-two {
+      margin-top: 1.2rem;
+        }   
+  
+  }
+  
+  @media (max-width: 700px) {
+    .logo {
+      display: none;
+        }
+  
+    .navbar-list {
+      flex-direction: row;
+      display: none;
+        }
+
+    .site-container {
+      display: flex;
+      flex-direction: column;
+        }
+    
+    .site-content {
+      width: 100%;
+      display: block;
+      height: fit-content;
+        }
+
+    .disponible-title {
+      text-align: center;
+        }
+
+    .all-posts {
+      width: 97%;
+      height: 530px;
+      border-bottom: 0.8rem;
+        }
+
+    .pet-img {
+      width: 70%;
+      margin-top: 0.8rem;
+        }
+  
+  }
+  @media (max-width: 425px) {
+    .center-footer-container {
+      width: 100%;
+      flex-direction: column;
+        }
+
+    .footer-lists-container {
+      margin-top: 1.2rem;
+      width: 90%;
+      height: fit-content;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-start;
+        }
+
+    .footer-list-two {
+      margin-top: 0px;
+        }
+    
+  }
